@@ -6,47 +6,47 @@ class Directory extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      categories: [
+      sections: [
         {
-          title: "skincare",
-          imageUrl: "https://i.ibb.co/Vg2vw1W/skincare.jpg",
+          title: 'hats',
+          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          linkUrl: "shop/skincare",
+          linkUrl: 'shop/hats'
         },
         {
-          title: "haircare",
-          imageUrl: "https://i.ibb.co/K0cpsDz/haircare.png",
+          title: 'jackets',
+          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
           id: 2,
-          linkUrl: "shop/haircare",
+          linkUrl: 'shop/jackets'
         },
         {
-          title: "accessories",
-          imageUrl: "https://i.ibb.co/gmPkYGN/accessories.jpg",
+          title: 'sneakers',
+          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
           id: 3,
-          linkUrl: "shop/accessories",
+          linkUrl: 'shop/sneakers'
         },
         {
-          title: "tools",
-          imageUrl: "https://i.ibb.co/7KQN0JT/tools.jpg",
-          size: "large",
+          title: 'women',
+          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          size: 'large',
           id: 4,
-          linkUrl: "shop/tools",
+          linkUrl: 'shop/women'
         },
         {
-          title: "makeup",
-          imageUrl: "https://i.ibb.co/LngMfgq/makeup.jpg",
-          size: "large",
+          title: 'men',
+          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          size: 'large',
           id: 5,
-          linkUrl: "shop/makeup",
-        },
-      ],
+          linkUrl: 'shop/men'
+        }
+      ]
     };
   }
 
   render() {
     return (
       <div className='directory-menu'>
-        {this.state.categories.map(({id, ...otherSectionProps}) => (
+        {this.state.sections.map(({id, ...otherSectionProps}) => (
           <MenuItem key={id} {...otherSectionProps}/>
         ))}
       </div>

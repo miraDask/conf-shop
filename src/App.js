@@ -6,7 +6,7 @@ import "./App.css";
 import "./pages/homepage/homepage.styles.scss";
 
 // test component
-const SkinCare = () => <h1>Skincare Page</h1>;
+const Hats = () => <h1>Hats Page</h1>;
 
 class App extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/shop/skincare" component={SkinCare} />
+          <Route exact path="/shop/hats" component={Hats} />
         </Switch>
       </div>
     );
