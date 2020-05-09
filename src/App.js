@@ -1,15 +1,21 @@
 import React from "react";
-import "./App.css";
-
 import HomePage from "./pages/homepage/homepage.component";
-import "./pages/homepage/homepage.styles.scss"
+import { Switch, Route } from "react-router-dom";
 
+import "./App.css";
+import "./pages/homepage/homepage.styles.scss";
+
+// test component
+const SkinCare = () => <h1>Skincare Page</h1>;
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <HomePage />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/shop/skincare" component={SkinCare} />
+        </Switch>
       </div>
     );
   }
