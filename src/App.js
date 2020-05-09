@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
 
-import HomePage from "./components/homepage/homepage.component";
-import "./components/homepage/homepage.styles.scss"
+import HomePage from "./pages/homepage/homepage.component";
+import "./pages/homepage/homepage.styles.scss"
 
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <HomePage categories={['Women', 'Men', 'Children']} />
+        <HomePage />
       </div>
     );
   }
